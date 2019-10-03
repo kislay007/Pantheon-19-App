@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/lb_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pos_img_view"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:visibility="invisible"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/team_pos"
+            style="@style/montserrat_medium_20"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="@id/pos_img_view"
+            app:layout_constraintEnd_toEndOf="@id/pos_img_view"
+            app:layout_constraintTop_toTopOf="@id/pos_img_view"
+            app:layout_constraintBottom_toBottomOf="@id/pos_img_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/team_name"
+            style="@style/montserrat_medium_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blunders Pride"
+            android:maxLines="1"
+            android:layout_marginStart="32dp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@id/pos_img_view"
+            app:layout_constraintEnd_toStartOf="@id/team_score"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/team_score"
+            style="@style/montserrat_medium_20"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1200"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:background="@color/md_grey_900"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+</LinearLayout>

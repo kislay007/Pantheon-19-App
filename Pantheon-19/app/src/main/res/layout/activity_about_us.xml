@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/activity_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.EventDetailActivity">
+
+    <include
+        layout="@layout/app_bar"
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cosmos">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/about_pantheon_title"
+                    android:text="@string/about_pantheon_label"
+                    style="@style/montserrat_medium_20"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/about_pantheon_desc"
+                    android:text="@string/about_pantheon_desc"
+                    style="@style/montserrat_medium_16"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toBottomOf="@id/about_pantheon_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/theme_pantheon_title"
+                    android:text="@string/theme_pantheon_label"
+                    style="@style/montserrat_medium_20"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toBottomOf="@id/about_pantheon_desc"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/theme_pantheon_desc"
+                    android:text="@string/theme_pantheon_desc"
+                    style="@style/montserrat_medium_16"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toBottomOf="@id/theme_pantheon_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/social_campaign_pantheon_title"
+                    android:text="@string/social_campaign_pantheon_label"
+                    style="@style/montserrat_medium_20"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toBottomOf="@id/theme_pantheon_desc"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/social_campaign_pantheon_desc"
+                    android:text="@string/social_campaign_pantheon_desc"
+                    style="@style/montserrat_medium_16"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toBottomOf="@id/social_campaign_pantheon_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/social_cause_pantheon_title"
+                    android:text="@string/social_cause_pantheon_label"
+                    style="@style/montserrat_medium_20"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toBottomOf="@id/social_campaign_pantheon_desc"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/social_cause_pantheon_desc"
+                    android:text="@string/social_cause_pantheon_desc"
+                    style="@style/montserrat_medium_16"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toBottomOf="@id/social_cause_pantheon_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/extra"
+                    android:text=""
+                    style="@style/montserrat_medium_20"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toBottomOf="@id/social_cause_pantheon_desc"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp">
+                </TextView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

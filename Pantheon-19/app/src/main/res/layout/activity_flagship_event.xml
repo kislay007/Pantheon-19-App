@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/flagship_list_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/activity_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.FlagshipEventActivity">
+
+    <include
+        android:id="@+id/flagship_toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/app_bar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/flagship_recycler_view"
+        app:layout_constraintTop_toBottomOf="@id/flagship_toolbar_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

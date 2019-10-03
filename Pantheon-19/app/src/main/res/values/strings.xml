@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">Pantheon 19</string>
+    <string name="home_image_description">home_image_description</string>
+    <string name="welcome_to_pantheon_19_title">Welcome to Pantheon \'19</string>
+    <string name="welcome_to_pantheon_19_description">Pantheon is an intricately strung assortment of technological marvels blended with a unique taste of youthful exuberance. This edition of Pantheon dives deeper into the wondrous world of technology through its intriguing theme “Cosmos: Beyond the Realms”.</string>
+    <string name="info_btn_desc">info_btn_desc</string>
+    <string name="flagship_btn_desc">flagship btn description</string>
+    <string name="event_btn_desc">event btn description</string>
+    <string name="facebook_button_desc">facebook button</string>
+    <string name="instagram_button_desc">instagram button</string>
+    <string name="web_button_desc">web button</string>
+    <string name="youtube_button_desc">youtube button</string>
+    <string name="flagship_card_demo_title">Code it blind!</string>
+    <string name="flagship_card_demo_venue">Lab - 7</string>
+    <string name="flagship_card_demo_time">11:00 a.m.</string>
+    <string name="flagship_card_featured_image">featured image</string>
+    <string name="flagship_cad_view_btn_label">VIEW</string>
+    <string name="flagship_activity_title">Flagship</string>
+    <string name="event_detail_image_desc">event image</string>
+    <string name="demo_point">100pt</string>
+
+    <string name="contact_label">Contact</string>
+    <string name="event_intent_pass_key">event_intent_pass_key</string>
+    <string name="informal_tag">informal</string>
+    <string name="formal_tag">formal</string>
+    <string name="about_pantheon_label">About Pantheon</string>
+
+    <string name="about_us_img_desc">about us img desc</string>
+    <string name="sponsor_icon_desc">sponsor icon</string>
+
+    <!-- =========================================== about page resources ====================================== -->
+
+    <string name="about_pantheon_desc">With an ambition to provide a platform for the youth to showcase their technical skills and display cutting-edge technologies, BIT conducts one of the biggest technical fests of Eastern India- Pantheon. Pantheon is an intricately strung assortment of technological marvels blended with a unique taste of youthful exuberance. This edition of Pantheon dives deeper into the wondrous world of technology through its intriguing theme “Cosmos: Beyond the Realms”.</string>
+
+    <string name="theme_pantheon_label">Theme \"Cosmos: Beyond the Realms\"</string>
+
+    <string name="theme_pantheon_desc">Pantheon’19 aims to celebrate the milestones set by astronomers, astronauts around the world and especially the success of ISRO in the field of space research and exploration. It also tries to encapsulate the possibilities of creating colonies in space, exploiting natural resources of other planets, and the probable existence of extraterrestrial species.</string>
+
+    <string name="social_campaign_pantheon_label">Social Campaign \"Menstrual Hygiene\"</string>
+
+    <string name="social_campaign_pantheon_desc">Technology has brought the latest interventions in the human life. Some of the devices that we access today couldn\'t have tramped over the human perceptions for a very long time. The annual technical fest of BIT Mesra, Pantheon takes a great sense of achievement in introducing \'Menstrual Hygiene\' as the social campaign.</string>
+
+    <string name="social_cause_pantheon_label">Social Cause \"Education for All\"</string>
+
+    <string name="social_cause_pantheon_desc">Technology has brought the latest interventions in the human life. Some of the devices that we access today couldn\'t have tramped over the human perceptions for a very long time. The annual technical fest of BIT Mesra, Pantheon takes a great sense of achievement in introducing \'Menstrual Hygiene\' as the social campaign.</string>
+
+    <!-- =========================================== flagships resources ====================================== -->
+    <string name="codezilla_label">Codezilla</string>
+    <string name="codezilla_desc">It is a team programming contest which will be conducted in two stages. In the first stage, an online contest will be conducted on HackerEarth where top 30 teams from BIT and top 20 from other colleges will be selected. Although there would be a common rank list for all years, top 5 teams from first year will be selected to go to the next round as well. There would be multiple problems and points would be allotted on solving the problems totally.</string>
+    <string name="codezilla_rules">1.  The contest will have the ACM ICPC Style Rank List.\n2.  There is no restriction on the programming language.\n3.  All the problems have same points allotted to them.\n4.  Users are ranked according to the most problems solved. Ties will be broken by the total time for each user in ascending order of time.\n5.  The total time is the sum of the time consumed for each problem solved. The time consumed for a solved problem is the time elapsed from the beginning of the contest to the submission of the first accepted run plus 20 penalty minutes for every previously rejected run for that problem (Wrong Answer, Time Limit Exceeded, Runtime Error, etc).\n6.  There is no time consumed for a problem that is not solved.\n7.  The decision of the organizers in declaring the results will be final. No queries in this regard will be entertained.\n8.  Any participant found to be indulging in any form of malpractice will be immediately disqualified.\n</string>
+    <string name="codezilla_day">2</string>
+    <string name="codezilla_time">10:00 A.M.</string>
+    <string name="codezilla_venue">Lab - 1, 4</string>
+    <string name="codezilla_coordinators">Abhishek Saini : 7006903810, Pranjal Rai : 7632002210</string>
+
+
+    <string name="illuminati_label">Illuminati</string>
+    <string name="illuminati_desc">Illuminati, the mock-paper presentation event of Pantheon’19 brings to you a once-in-a-while opportunity to unleash your creative side. If you have the mettle to prove your technical prowess, Illuminati provides you with the perfect platform to present your research paper on a scientific theme. All you have to do prior to the presentation is submit your abstract and relevant information set. Are you ready to enlighten and establish a new world order?</string>
+    <string name="illuminati_rules">1.  Participating teams will have to prepare a report of their Presentation with required graphic details, in less than 1000 words, and mail it to the address of eventsteam.pantheon@gmail.com.\n\n2.  The selected teams will be sent mails regarding their selection and will be informed about the further rounds.\n\n3.  The teams will be given 15 minutes to present their research paper with a supplementary PowerPoint presentation.\n\n4.  The selected teams have to submit at least five hard copies of their research to the esteemed panel who will be scrutinizing their research.\n\n5.  There will be an additional viva session of every team at the end of their presentations.\n\n6.  The teams will be judged on their content, level of research, presentation skills and viva performances.\n\n7.  The dress code will be strictly formal wears.\n\n8.  Plagiarism is strictly prohibited.\n\n9.  The decision of the Judging Panel will be final and binding.\n</string>
+    <string name="illuminati_day">2</string>
+    <string name="illuminati_time">1:00 PM</string>
+    <string name="illuminati_venue">LH 1</string>
+    <string name="illuminati_coordinators">Sharique Khan: 8002803897, Soumya: 70091627770</string>
+
+
+    <string name="droid_trooper_label">Droid Trooper</string>
+    <string name="droid_trooper_desc">The teams have to build a manual robot (wired or wireless) which has to pick-up cubes from their respective location points and place them on a rotating disc. During the process it should cross through rough terrains which is divided into multiple zones. Different zones contain different obstacles. Teams need to design their robot in such a way that it can place the cubes correctly at the target locations and cross all the obstacles to successfully complete the race. The teams will be awarded points for the above task and also for crossing the zones in the stipulated time limit.</string>
+    <string name="droid_trooper_rules">1.	There will be a certain time limit (mentioned in the rulebook) to complete the challenge after which they will incur a penalty. \n\n2.	Top 4 teams with maximum points will qualify for the finals. \n\n3.	A team should contain a maximum of 4 members. \n\n4.	2 attempts will be given to a team and the best of 2 attempts will be recorded. \n\n5.The dimensions of the bot will be mentioned in rulebook. \n\n6.Details about points and penalties will be given in the problem statement along with the different views of the game field. \n\n7.	Basic components such as motors, wheels, switches, motor clamps etc. will provided by ROBOLUTION at nominal rates or contestants can buy their own components.\n</string>
+    <string name="droid_trooper_day">1</string>
+    <string name="droid_trooper_time">1:00 PM-5:00 PM</string>
+    <string name="droid_trooper_venue">IC Arena</string>
+    <string name="droid_trooper_coordinators">Sourabh Khemka: 8674810511, Sarthak M Das: 8789365337</string>
+
+
+    <string name="cube_de_cemento_label">Cube De Cemento</string>
+    <string name="cube_de_cemento_desc">If you get attracted towards composed materials especially cement and concrete, Cube-de-Cemento will definitely grab your attention. You will get a chance to showcase your concrete skills and probably make your first cube made of cement! You would surely not want to miss this opportunity.</string>
+    <string name="cube_de_cemento_rules">Participating teams will have to face two rounds.\n\n1. If you get attracted towards composed materials especially cement and concrete, Cube-de-Cemento will definitely grab your attention. You will get a chance to showcase your concrete skills and probably make your first cube made of cement! You would surely not want to miss this opportunity.\n\n2.	Based on the performance of participants in the aptitude round, a total of 12 teams will be selected for the second round. \n\n3.	In the second round, each team will be given a few kgs of cement along with some chips and sand to prepare a concrete cube. The given substances will be in the ratio of 1:2:3. \n\n4.	The quality of the cubes like the tensile strength and concreteness will decide the winning team. The team which ends up with a cube having correct proportion of cement, chips and sand will be adjudged as winners. \n</string>
+    <string name="cube_de_cemento_day">1</string>
+    <string name="cube_de_cemento_time">9:00 AM</string>
+    <string name="cube_de_cemento_venue">F1, Cement Concrete Lab</string>
+    <string name="cube_de_cemento_coordinators">Vikas: 9162468289, Anubhaw Sinha: 7004123112</string>
+
+
+    <string name="eureka_label">Eureka</string>
+    <string name="eureka_desc">Eureka, the flagship event of Pantheon\'19 is an opportunity for the smartest and quirkiest teenagers to bring out the explorer in themselves. For the preliminary round, the basic idea of the project is to be mailed along with the relevant pictures. The best entries get a chance to feature their models for the final exhibition.</string>
+    <string name="eureka_rules">1.	Participants will have to prepare a report of their presentation with required photographs as a proof of their project progress, in less than 1000 words, and mail it to the address of eventsteam.pantheon@gmail.com before 23rd September.  \n\n2.	The selected teams will be sent mails regarding their selection and will be informed about the further rounds.  \n\n3.	The selected teams will have to be present during the entire exhibition and will have to explain their project to the technical enthusiasts present. \n\n4.	The teams will also be explaining their project to the judging panel who will scrutinize their project.  \n\n5.	The teams will be given a total time of 10 minutes to explain their project.  \n\n6.	The teams will be marked on their content, level of research, presentation skills and most importantly crowd interaction skills.  \n\n7.	The decision of the judging panel will be final and binding. \n</string>
+    <string name="eureka_day">2</string>
+    <string name="eureka_time">9:00 AM</string>
+    <string name="eureka_venue">Community Hall</string>
+    <string name="eureka_coordinators">Sharique Khan: 8002803897, Soumya: 70091627770</string>
+
+
+
+    <string name="rules_and_regulations_label">Rules and Regulations</string>
+    <string name="flagship_intent_pass_key">flagship_intent_pass_key</string>
+
+</resources>

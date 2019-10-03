@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kraken.pantheon19">
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/appicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activities.AboutUsActivity" />
+        <activity android:name=".Activities.LeaderboardActivity" />
+        <activity android:name=".Activities.SponsorsActivity" />
+        <activity android:name=".Activities.PrivacyPolicyActivity" />
+        <activity android:name=".Activities.SpeakersListActivity" />
+        <activity
+            android:name=".Activities.EventDetailActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Activities.FlagshipEventActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Activities.HomepageActivity" />
+        <activity
+            android:name=".Activities.EventsActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Activities.HomepageActivity" />
+        <activity android:name=".Activities.HomepageActivity" />
+        <activity android:name=".Activities.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name=".Activities.MyMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

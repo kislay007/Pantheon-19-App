@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/activity_background"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/home_layout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/activity_background"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:background="@color/activity_background"
+            app:layout_constraintTop_toTopOf="parent"
+            app:elevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/app_bar"
+                android:elevation="6dp"
+                app:layout_scrollFlags="scroll|snap|enterAlways"
+                android:background="@color/activity_background"
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:layout_height="?attr/actionBarSize">
+
+                <ImageView
+                    android:id="@+id/theme_switcher"
+                    android:src="@drawable/theme"
+                    android:tint="#fff"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:elevation="8dp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"/>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/image_main"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="292dp">
+
+            <ImageView
+                android:src="@drawable/ic_action_menu"
+                android:tint="#fff"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:elevation="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"/>
+
+            <ImageView
+                android:src="@drawable/theme"
+                android:tint="#fff"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:elevation="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="60dp"/>
+
+            <ImageView
+                android:id="@+id/pantheon_title_img"
+                android:src="@drawable/pantheon_19_new"
+                android:contentDescription="@string/home_image_description"
+                android:elevation="1dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="258dp"
+                android:layout_height="75dp" />
+
+            <ImageView
+                android:id="@+id/main_image"
+                android:contentDescription="@string/home_image_description"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hb"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/heading"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/image_main"
+            app:layout_constraintBottom_toTopOf="@id/events_buttons"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/pantheon_19_title"
+                android:text="@string/welcome_to_pantheon_19_title"
+                android:textSize="20sp"
+                android:paddingTop="24dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="20dp"
+                style="@style/montserrat_medium_20"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/pantheon_19_description"
+                android:text="@string/welcome_to_pantheon_19_description"
+                android:textAlignment="center"
+                android:layout_marginTop="8dp"
+                android:textSize="12sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                style="@style/montserrat_light_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/events_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintBottom_toTopOf="@id/social_icons"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/heading">
+
+            <TableRow>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/info_home_layout"
+                        android:background="@color/accent_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:id="@+id/info_button"
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:background="@color/accent_grey"
+                            android:contentDescription="@string/info_btn_desc"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:src="@drawable/baseline_info_24px" />
+
+                        <TextView
+                            android:id="@+id/info_home_text"
+                            android:text="About"
+                            android:layout_marginBottom="8dp"
+                            style="@style/montserrat_light_10"
+                            app:layout_constraintTop_toBottomOf="@id/info_button"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    app:cardCornerRadius="10dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/flagship_home_layout"
+                        android:background="@color/accent_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:id="@+id/flagship_list_button"
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:background="@color/accent_grey"
+                            android:contentDescription="@string/flagship_btn_desc"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:src="@drawable/baseline_flag_24px" />
+
+                        <TextView
+                            android:id="@+id/flagship_home_text"
+                            android:text="Flagships"
+                            android:layout_marginBottom="8dp"
+                            style="@style/montserrat_light_10"
+                            app:layout_constraintTop_toBottomOf="@id/flagship_list_button"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    app:cardCornerRadius="10dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/events_home_layout"
+                        android:background="@color/accent_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:id="@+id/event_list_button"
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:background="@color/accent_grey"
+                            android:contentDescription="@string/event_btn_desc"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:src="@drawable/baseline_event_note_24px" />
+
+                        <TextView
+                            android:id="@+id/events_home_text"
+                            android:text="Events"
+                            android:layout_marginBottom="8dp"
+                            style="@style/montserrat_light_10"
+                            app:layout_constraintTop_toBottomOf="@id/event_list_button"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/speaker_home_layout"
+                        android:background="@color/accent_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:id="@+id/guest_speaker_btn"
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:background="@color/accent_grey"
+                            android:contentDescription="@string/info_btn_desc"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:src="@drawable/guest_lecture" />
+
+                        <TextView
+                            android:id="@+id/speakers_home_text"
+                            android:text="Speakers"
+                            android:layout_marginBottom="8dp"
+                            style="@style/montserrat_light_10"
+                            app:layout_constraintTop_toBottomOf="@id/guest_speaker_btn"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    app:cardCornerRadius="10dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/lb_home_layout"
+                        android:background="@color/accent_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:id="@+id/leaderboard_btn"
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:background="@color/accent_grey"
+                            android:contentDescription="@string/flagship_btn_desc"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:src="@drawable/leaderboard" />
+
+                        <TextView
+                            android:id="@+id/lb_home_text"
+                            android:text="Leaderboard"
+                            android:layout_marginBottom="8dp"
+                            style="@style/montserrat_light_10"
+                            app:layout_constraintTop_toBottomOf="@id/leaderboard_btn"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    app:cardCornerRadius="10dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/sponsors_home_layout"
+                        android:background="@color/accent_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:id="@+id/sponsors_btn"
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:background="@color/accent_grey"
+                            android:contentDescription="@string/event_btn_desc"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:src="@drawable/money_icon" />
+
+                        <TextView
+                            android:id="@+id/sponsors_home_text"
+                            android:text="Sponsors"
+                            android:layout_marginBottom="8dp"
+                            style="@style/montserrat_light_10"
+                            app:layout_constraintTop_toBottomOf="@id/sponsors_btn"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:id="@+id/social_icons"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/facebook_btn"
+                android:src="@drawable/facebook"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/facebook_button_desc"
+                android:paddingEnd="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:scaleType="fitCenter"
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+            <ImageButton
+                android:id="@+id/instagram_btn"
+                android:src="@drawable/instagram"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/instagram_button_desc"
+                android:padding="15dp"
+                android:scaleType="fitCenter"
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+            <ImageButton
+                android:id="@+id/web_btn"
+                android:src="@drawable/global"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/web_button_desc"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:scaleType="fitCenter"
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

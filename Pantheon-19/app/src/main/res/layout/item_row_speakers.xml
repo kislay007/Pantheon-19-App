@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/speaker_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="16dp"
+    android:background="#000000"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="117dp"
+        android:scaleType="centerCrop"
+        android:layout_height="173dp"
+        android:layout_marginStart="16dp"
+        android:layout_gravity="center_vertical"
+        android:background="#fff"
+        android:id="@+id/circleView">
+    </ImageView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <TextView
+            android:id="@+id/speaker_name"
+            android:paddingBottom="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/montserrat_medium_20" />
+
+        <LinearLayout
+            android:id="@+id/underline"
+            android:orientation="horizontal"
+            android:background="@color/md_red_500"
+            app:layout_constraintTop_toBottomOf="@id/speaker_name"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="150dp"
+            android:layout_height="6dp" />
+
+        <TextView
+            android:id="@+id/speaker_description"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/underline"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/montserrat_light_12"/>
+
+        <TextView
+            android:id="@+id/speakers_venue"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/speaker_description"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/montserrat_medium_16" />
+
+        <TextView
+            android:id="@+id/speakers_start_time"
+            app:layout_constraintTop_toBottomOf="@id/speakers_venue"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/montserrat_medium_16" />
+
+        <TextView
+            android:id="@+id/speakers_day"
+            app:layout_constraintTop_toBottomOf="@id/speakers_start_time"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/montserrat_medium_16" />
+
+<!--        <LinearLayout-->
+<!--            android:layout_marginStart="-8dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/speakers_start_time"-->
+<!--            app:layout_constraintVertical_bias="1.0"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <ImageButton-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:src="@drawable/facebook" />-->
+
+<!--            <ImageButton-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:src="@drawable/instagram" />-->
+
+<!--            <ImageButton-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:src="@drawable/youtube"/>-->
+
+<!--        </LinearLayout>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

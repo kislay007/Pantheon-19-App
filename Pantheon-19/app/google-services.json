@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "923803139777",
+    "firebase_url": "https://pantheon-19.firebaseio.com",
+    "project_id": "pantheon-19",
+    "storage_bucket": "pantheon-19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923803139777:android:030e82f643ebec284cde40",
+        "android_client_info": {
+          "package_name": "com.kraken.pantheon19"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "923803139777-5s476a8q1k6so6mqjf02qbsgv6gequem.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kraken.pantheon19",
+            "certificate_hash": "b60f6a2187922ea9ec1705504265ed62e5c2e655"
+          }
+        },
+        {
+          "client_id": "923803139777-t9v3kl56nuc3igtijcdvjpv468ir7mqn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNoTiyKag2hSPQ4ehPLlWmA_DfePB03DY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "923803139777-t9v3kl56nuc3igtijcdvjpv468ir7mqn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
